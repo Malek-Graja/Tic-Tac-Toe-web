@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="TTT.css">
+</head>
+<body>
+
+    <div id="login-frame" class="frame">
+        <h1>Connexion/Inscription</h1>
+        
+        <label for="username">Nom d'utilisateur:</label>
+        <input type="text" id="username" placeholder="Entrez votre nom">
+        
+        <label for="password">Mot de passe:</label>
+        <!-- type="password" acts exactly like your show="*" in Tkinter -->
+        <input type="password" id="password" placeholder="Entrez votre mot de passe">
+        
+        <p id="login-status"></p>
+        
+        <button id="login-btn">Se connecter</button>
+        <button id="register-btn">S'inscrire</button>
+    </div>
+
+    <div id="game-frame" class="frame hidden">
+        <h2>Bienvenue dans le jeu du X/O !</h2>
+        <h3 id="turn-label">Le joueur 1 est X et le joueur 2 est O.</h3>
+        
+        <div id="grid-frame">
+            <button class="cell" data-row="0" data-col="0"></button>
+            <button class="cell" data-row="0" data-col="1"></button>
+            <button class="cell" data-row="0" data-col="2"></button>
+            
+            <button class="cell" data-row="1" data-col="0"></button>
+            <button class="cell" data-row="1" data-col="1"></button>
+            <button class="cell" data-row="1" data-col="2"></button>
+            
+            <button class="cell" data-row="2" data-col="0"></button>
+            <button class="cell" data-row="2" data-col="1"></button>
+            <button class="cell" data-row="2" data-col="2"></button>
+        </div>
+
+        <button id="reset-btn">Recommencer</button>
+        <button id="history-btn">Historique</button>
+    </div>
+
+    <div id="history-frame" class="frame hidden">
+        <h2>Historique des parties</h2>
+        
+        <ul id="history-text"></ul>
+        
+        <button id="back-btn">Retour</button>
+    </div>
+
+    <script src="TTT.js"></script>
+</body>
+</html>
