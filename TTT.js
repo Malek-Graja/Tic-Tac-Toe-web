@@ -101,7 +101,14 @@ function showHistory() {
 
     data.history.forEach(match => {
         const li = document.createElement("li");
-        li.textContent = `Joueur 1: ${match.player1}, Joueur 2: ${match.player2}, Gagnant: ${match.winner}, Date: ${match.date}`;
+
+        li.innerHTML = `
+            <div>Joueur 1: ${match.player1}</div>
+            <div>Joueur 2: ${match.player2}</div>
+            <div>Gagnant: ${match.winner}</div>
+            <div>Date: ${match.date}</div>
+        `;
+
         historyList.appendChild(li);
     });
 
