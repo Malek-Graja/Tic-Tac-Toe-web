@@ -110,9 +110,10 @@ button:disabled {
 }
 
 #history-text li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    font-size: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
 #history-text li:last-child {
